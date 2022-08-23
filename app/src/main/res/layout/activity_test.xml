@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--EditText for adding employee code-->
+    <EditText
+        android:id="@+id/empCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_employee_code"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <!--EditText for adding employee foodcat-->
+    <EditText
+        android:id="@+id/empFoodCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empCode"
+        android:layout_margin="10dp"
+        android:hint="Enter employee food cat"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <!--EditText for adding employee foodit-->
+    <EditText
+        android:id="@+id/empFoodIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empFoodCat"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_employee_food_iterm"
+        android:inputType="text" />
+
+    <!--EditText for adding employee plate left-->
+    <EditText
+        android:id="@+id/empPlateLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empFoodIt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_employee_plates_left"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <!--EditText for adding employee plates pending-->
+    <EditText
+        android:id="@+id/empPlatesPending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empPlateLeft"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_employee_plates_pending"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <!--EditText for adding employee order time-->
+    <EditText
+        android:id="@+id/empLunchTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empPlatesPending"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_employee_order_time"
+        android:inputType="text" />
+
+    <!--Button for adding data to Firebase-->
+    <Button
+        android:id="@+id/idBtnSendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empLunchTime"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/add_employee_details"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

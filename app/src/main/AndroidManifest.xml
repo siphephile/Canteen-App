@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sarzar.canteenapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/face_icon2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/face_icon2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FaceRecognition.NoActionBar">
+        <activity
+            android:name=".ScrollingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.FaceRecognition.NoActionBar.NoActionBar" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".FaceActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FaceRecognition.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
