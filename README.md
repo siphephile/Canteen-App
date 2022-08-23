@@ -2,7 +2,7 @@
 
 A good face recognition android project.
 
-## [Playstore Link](https://play.google.com/store/apps/details?id=com.atharvakale.facerecognition)
+## [Playstore](https://play.google.com/store/apps/details?id=com.sarzar.canteenapp)
 
 ## Key Features 
 - Fast and very accurate.
