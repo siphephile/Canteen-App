@@ -1,4 +1,4 @@
-# Real Time Face Recognition App using TfLite
+# Face detecting canteen android application
 
 A good face recognition android project.
 
